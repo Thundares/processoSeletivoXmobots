@@ -1,5 +1,6 @@
 import React from 'react'
 
+// component that contains the login form from index 
 export default props =>
     <div className="loginCard">
         <div className="loginCard-Title">
