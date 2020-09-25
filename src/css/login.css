@@ -1,0 +1,53 @@
+.loginCard {
+    font-family: Helvetica, sans-serif;
+
+    color: black;
+    background-color: aliceblue;
+
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+
+    height: 300px;
+    width: 350px;
+}
+
+.loginCard-Title {
+    background-color: coral;
+
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.loginCard-Content {
+    text-align: center;
+    line-height: 1.5;
+}
+.loginCard-Content label {
+    font-weight: 600;
+}
+.loginCard-Content input {
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.loginCard-Content .logBtn {
+    margin-right: 30px;
+    padding: 20px;
+
+    font-weight: 600;
+}
+.loginCard-Content .logBtn:hover {
+    background-color: #444;
+    transition: 0.5s;
+}
+
+.logDiv a {
+    text-decoration: none;
+    color: black;
+}
+.logDiv a:hover {
+    background-color: dimgrey;
+    transition: 0.5s;
+}
