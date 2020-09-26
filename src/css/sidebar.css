@@ -1,7 +1,7 @@
 .sidebar {
     background-color: darkcyan;
     border: 2px solid white;
-    width: 200px;
+    width: 250px;
     height: 750px;
 }
 
@@ -9,4 +9,18 @@
     text-align: center;
     font-size: 22px;
     margin-top: 20px;
+}
+
+.logged-content {
+    margin-top: 40px;
+    max-width: 180px;
+    
+    text-align: center;
+}
+
+.logged-content input {
+    font-size: 14px;
+    max-width: 125px;
+    position: relative;
+    left: 30px;
 }

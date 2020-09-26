@@ -43,11 +43,13 @@
     transition: 0.5s;
 }
 
-.logDiv a {
+.logDiv button {
+    display: inline-block;
     text-decoration: none;
     color: black;
+    
 }
-.logDiv a:hover {
+.logDiv button:hover {
     background-color: dimgrey;
     transition: 0.5s;
 }

@@ -1,0 +1,59 @@
+.create {
+    font-family: Helvetica, sans-serif;
+
+    background-color: aliceblue;
+
+    position: relative;
+    top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 600px;
+}
+
+.create-title {
+    background-color: coral;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    
+    height: 30px;
+}
+
+.create-content {
+    max-width: 65%;
+
+    text-align: center;
+    line-height: 1.5;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.create-content input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 30px;
+}
+.create-content label {
+    font-weight: 600;
+}
+.create-content button {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+
+    position: relative;
+    top: -20px;
+}
+.create-content span {
+    color: red;
+    position: relative;
+    top: -168px;
+}
+.hidden {
+    display: none;
+}

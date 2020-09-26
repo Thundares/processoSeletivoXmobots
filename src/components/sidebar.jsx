@@ -6,4 +6,7 @@ export default props =>
         <div className='logged-text'>
             <label>Logged as {props.username}</label>
         </div>
+        <div className='logged-content'>
+            {props.children}
+        </div>
     </div>
