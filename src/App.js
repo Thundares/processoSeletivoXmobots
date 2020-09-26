@@ -3,9 +3,11 @@ import './App.css';
 import './css/login.css';
 import './css/sidebar.css';
 import './css/create.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import Card from './components/loginCard.jsx';
 import Sidebar from './components/sidebar.jsx';
 import CreateForm from './components/createUser.jsx';
+import Mapbox from './components/map.jsx';
 
 class App extends React.Component {  
     constructor(props) {
@@ -139,10 +141,15 @@ class App extends React.Component {
         else if(this.state.page === 'logged') {
             // return page after LOGGED
             return (
-                <Sidebar username={this.state.name}>
-                    <label>Submit the information</label>
-                    <input type='file' />
-                </Sidebar>
+                <div>
+                    <Sidebar username={this.state.name}>
+                        <label>Submit the information</label>
+                        <input type='file' />
+                    </Sidebar>
+                    <Mapbox>
+
+                    </Mapbox>
+                </div>
             );
         }// close if page === logged
     }// close render

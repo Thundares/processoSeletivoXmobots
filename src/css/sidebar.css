@@ -3,6 +3,9 @@
     border: 2px solid white;
     width: 250px;
     height: 750px;
+    position: absolute;
+    float: left;
+    z-index: 100;
 }
 
 .logged-text {
