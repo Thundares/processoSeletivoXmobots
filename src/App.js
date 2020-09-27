@@ -44,7 +44,6 @@ class App extends React.Component {
         else {
           this.setState({page: 'logged'});
         }
-        
     }
 
     // functions that handle create form
