@@ -7,9 +7,9 @@ export default function Map() {
     const [viewport, setViewport] = useState({
         width: '100vw',
         height: '100vh',
-        latitude: -22.05272,
-        longitude: -47.85586,
-        zoom: 18
+        latitude: -16.0,
+        longitude: -49.0,
+        zoom: 5
     });
 
     // it is said to create env.local for safety, but it is a free token.
@@ -117,13 +117,22 @@ export default function Map() {
     return (
         <ReactMapGl {...viewport}
         mapboxApiAccessToken={mapToken} 
-        onViewportChange={(newViewport) => {setViewport(newViewport)}}>
+        onViewportChange={(newViewport) => {setViewport(newViewport)}}
+        >
             {aeroDromes.aerodromes.map(function(spot) {
                 let coord = extractLocation(spot.description);
                 return (
                 <Marker key={spot.name} latitude={coord.lat} longitude={coord.long}>
-                    <div>
-                        {coord.lat}
+                    <div style={{
+                        backgroundColor: "black",
+                        borderStyle: "solid",
+                        borderWidth: 2,
+                        borderRadius: 500,
+                        opacity: 0.5,
+                        width: 0.05*viewport.zoom**3.5,
+                        height: 0.05*viewport.zoom**3.5,
+                    }}>
+                        
                     </div>
                 </Marker>
                 );
