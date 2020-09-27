@@ -3,7 +3,6 @@ import './App.css';
 import './css/login.css';
 import './css/sidebar.css';
 import './css/create.css';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import Card from './components/loginCard.jsx';
 import Sidebar from './components/sidebar.jsx';
 import CreateForm from './components/createUser.jsx';
