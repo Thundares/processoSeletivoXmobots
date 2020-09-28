@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPDF, { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 
+// NOT WORKING CODE
 
 export default function createPDF (props) {
 
@@ -36,6 +37,7 @@ export default function createPDF (props) {
             </Page>
         </Document>
     );
+
 
     ReactPDF.render(<Formatted />, '../backend/data.pdf');
 }
