@@ -56,7 +56,7 @@ export default function Map() {
             }
         }
         latitudeNumber *= 10;
-        console.log('minutes: ' + minutesPart + ' /// ' + 'seconds: ' + secondsPart);
+        
         // following the tip 
         secondsPart = ((minutesPart * 60) + secondsPart) / 3600;
 
@@ -162,9 +162,12 @@ export default function Map() {
                         borderWidth: 2,
                         borderRadius: 500,
                         opacity: 0.5,
+                        
                         // trying to emulate the fixed size radius of 5km. But it is not calculated.
-                        width: 0.05*viewport.zoom**3.5,
-                        height: 0.05*viewport.zoom**3.5,
+                        // changed width and height base to 0.01 so it becomes more precise, but it does
+                        // not emulate the 5km radius anymore.
+                        width: 0.01*viewport.zoom**3.5,
+                        height: 0.01*viewport.zoom**3.5,
                     }}>
                         
                     </div>

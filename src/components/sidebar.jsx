@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPDF, { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 import * as aeroDromes from '../aerodromes.json'; 
 
-// NOT WORKING CODE TO CRETE PDF
+// NOT WORKING CODE TO CREATE PDF
 function createPDF () {
 
     const styles = StyleSheet.create({
