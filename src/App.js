@@ -75,7 +75,7 @@ class App extends React.Component {
         }
     }
 
-    // check if everything is filled
+    // check if everything is filled on the createUser page
     checkEverything() {
         if(this.state.name.length > 0 && 
           this.state.password.length > 0 &&
@@ -101,52 +101,24 @@ class App extends React.Component {
             // return the INDEX page
             return (
                 <div className="App">
-                    <Card Title="Login">
-                        <form onSubmit={this.submitHandler}>
-                            <label>Username:</label>
-                            <input type="text" id="username" onChange={this.changeHandler}/>
-                            <label>Password:</label>
-                            <input type="password" id="password"/>
-                            <div className="logDiv">
-                                <input type="submit" className="logBtn" value="Log in" />
-                                <button onClick={this.createUser} >Create a account</button>
-                            </div>
-                        </form>
-                    </Card>
+                    <Card title="Login" app={this} />
                 </div>
             );
         }// close if page === index
+
         else if(this.state.page === 'createUser') {
             // return the CREATEUSER page
             return (
-                <CreateForm Title='Create your user'>
-                    <form>
-                        <label>Name</label>
-                        <input type='text' onChange={this.createNameChangeHandler}/>
-                        <label>E-mail</label>
-                        <input type='e-mail' onChange={this.createEmailChangeHandler}/>
-                        <label>Password</label>
-                        <input type='password' onChange={this.createPassChangeHandler}/>
-                        <label>Re-Enter password</label>
-                        <input type='password' onChange={this.createReEnterChangeHandler}/>
-                        <button disabled={this.state.createBtnDisabled} onClick={this.createBtnOnClick}>Register</button>
-                        <button id='disabledBtn' onClick={this.backToIndex}>Back</button>
-                        <span className={this.state.createSpanDisabled ? 'hidden' : ''}>The password does not match.</span>
-                    </form>
-                </CreateForm>
+                <CreateForm title='Create your user' app={this} />
             )
         }
+        
         else if(this.state.page === 'logged') {
             // return page after LOGGED
             return (
                 <div>
-                    <Sidebar username={this.state.name}>
-                        <label>Submit the information</label>
-                        <input type='file' />
-                    </Sidebar>
-                    <Mapbox>
-
-                    </Mapbox>
+                    <Sidebar username={this.state.name} app={this} />
+                    <Mapbox />
                 </div>
             );
         }// close if page === logged

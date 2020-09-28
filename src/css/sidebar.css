@@ -1,3 +1,20 @@
+table {
+    font-size: 10px;
+    max-width: 250px;
+    max-height: 750px;
+
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+thead th {
+    border: 1px solid black;
+}
+
+tbody td {
+    border-left: 1px solid black;
+}
+
 .sidebar {
     background-color: darkcyan;
     border: 2px solid white;
@@ -12,6 +29,7 @@
     text-align: center;
     font-size: 22px;
     margin-top: 20px;
+    font-weight: 600;
 }
 
 .logged-content {
@@ -26,4 +44,19 @@
     max-width: 125px;
     position: relative;
     left: 30px;
+}
+
+.PDF-part {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.PDF-part button {
+    position: relative;
+    right: 5px;
+    top: 580px;
+    width: 120px;
+    margin: 0;
+    padding: 0;
 }

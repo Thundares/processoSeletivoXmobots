@@ -162,6 +162,7 @@ export default function Map() {
                         borderWidth: 2,
                         borderRadius: 500,
                         opacity: 0.5,
+                        // trying to emulate the fixed size radius of 5km. But it is not calculated.
                         width: 0.05*viewport.zoom**3.5,
                         height: 0.05*viewport.zoom**3.5,
                     }}>

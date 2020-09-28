@@ -4,9 +4,20 @@ import React from 'react'
 export default props =>
     <div className="loginCard">
         <div className="loginCard-Title">
-            {props.Title}
+            {props.title}
         </div>
         <div className="loginCard-Content">
-            {props.children}
+            <form onSubmit={props.app.submitHandler}>
+                <label>Username:</label>
+                <input type="text" id="username" onChange={props.app.changeHandler}/>
+
+                <label>Password:</label>
+                <input type="password" id="password"/>
+                
+                <div className="logDiv">
+                    <input type="submit" className="logBtn" value="Log in" />
+                    <button onClick={props.app.createUser} >Create a account</button>
+                </div>
+            </form>
         </div>
     </div>
